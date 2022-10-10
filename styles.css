@@ -10,11 +10,47 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10px;
 }
 
 body {
   display: grid;
   place-items: center;
+}
+
+.back {
+  grid-area: 1;
+  height: 350px;
+  width: 350px;
+  background-color: var(--hand-color1);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.twelve {
+  top: 0;
+}
+
+.three {
+  left: 95%;
+}
+
+.six {
+  top: 93%;
+}
+
+.nine {
+  left: 2%;
 }
 
 .face {
@@ -44,9 +80,9 @@ body {
   left: 0;
   transform: rotate(90deg);
   transform-origin: 100%;
-  transition: all 0.5s;
+  transition: all 0.25s infinite;
   transition-timing-function: cubic-bezier(0.42, 0, 0, 1.31);
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
